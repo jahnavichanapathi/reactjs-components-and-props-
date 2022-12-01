@@ -15,12 +15,23 @@ function App(){
   }
 export default App*/
 
-import PropsExample from "./PropsExample"
+
+
+// import PropsExample from "./PropsExample"
+// import FuncPropExample from "./FuncPropExample"
+import StateExample from "./StateExample"
 function App(){
   return(
     <div>
-        <h1>This is about PropsExample</h1>
-        <PropsExample name="jahnavi" age="20"/>    
+        {/* <h1>This is about PropsExample</h1>
+        <PropsExample name="jahnavi" age="20"/> */}
+        {/* <PropsExample framework="Angularjs" year="2008"/>
+        <PropsExample framework="Reactjs" year="2013"/>
+        <PropsExample framework="Vuejs" year="2017"/> */}
+        
+        {/* <FuncPropExample framework="React" number="1"/>  */}
+        <StateExample/>
+        
     </div>
 
     )
