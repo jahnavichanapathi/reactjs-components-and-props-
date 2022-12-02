@@ -20,8 +20,8 @@ class PropsExample extends React.Component{
 		console.log(this.props)
 		return(
 			<div>
-				<p> Name:{this.props.framework}</p>
-				<p> year:{this.props.year}</p>
+				<p> name:{this.props.name}</p>
+				<p> age:{this.props.age}</p>
 			</div>
 		)
 	}

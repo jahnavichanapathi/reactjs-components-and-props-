@@ -10,8 +10,8 @@ export default class StateExample extends React.Component {
     return (
       <div>
         StateExample
-        <p>this.state.name</p>
-        <p>this.state.age</p>
+        <p>{this.state.name}</p>
+        <p>{this.state.age}</p>
         </div>
     )
   }
