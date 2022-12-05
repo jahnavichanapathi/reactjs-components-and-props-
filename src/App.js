@@ -20,7 +20,13 @@ export default App*/
 // import PropsExample from "./PropsExample"
 // import FuncPropExample from "./FuncPropExample"
 // import StateExample from "./StateExample"
-import Events from "./Events"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+// import Events from "./Events"
+import Home from "./components/Home"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Navbar  from "./components/Navbar"
+import NotFound from "./components/NotFound"
 function App(){
   return(
     <div>
@@ -32,7 +38,17 @@ function App(){
         
         {/* <FuncPropExample framework="React" number="1"/>  */}
         {/* <StateExample/>  */}
-        <Events/>
+        {/* <Events/> */}
+        <BrowserRouter>
+        <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/*" element={<NotFound/>}/>
+
+          </Routes>
+        </BrowserRouter>
         
     </div>
 
